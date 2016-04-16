@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite3" parallel="tests" thread-count="3">
+  
+  <test name="Test1" parallel="classes" thread-count="2">
+    <classes>
+      <class name="exploreTestNG.Class1"/>
+      <class name="exploreTestNG.Class2"/>
+    </classes>   
+  </test>
+  
+  <test name="Test2" parallel="classes" thread-count="2">
+    <classes>
+      <class name="exploreTestNG.Class3"/>
+      <class name="exploreTestNG.Class4"/>
+    </classes>   
+  </test> 
+  
+  <test name="Test3" parallel="classes" thread-count="2"> 
+    <classes>
+      <class name="exploreTestNG.Class5"/>
+      <class name="exploreTestNG.Class6"/>
+    </classes>   
+  </test>
+
+  <test name="Test5">
+    <classes>
+      <class name="exploreTestNG.Class7"/>
+      <class name="exploreTestNG.Class8"/>
+      <class name="exploreTestNG.Class9"/>
+      <class name="exploreTestNG.Class10"/>
+    </classes>   
+  </test>
+  
+</suite> <!-- Suite3 -->
