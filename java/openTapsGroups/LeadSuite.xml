@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LeadSuite">
+  <test name="Test">
+  	<parameter name="Browser" value ="Chrome" />
+    <classes>
+      <class name="openTapsGroups.CreateLead"/>
+      <class name="openTapsGroups.EditLead"/>
+      <class name="openTapsGroups.MergeLead"/>
+      <class name="openTapsGroups.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- LeadSuite -->

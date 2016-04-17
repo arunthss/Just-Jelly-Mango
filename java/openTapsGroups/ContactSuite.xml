@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ContactSuite">
+  <test name="Test">
+  <parameter name="Browser" value ="FireFox" />
+  <groups>
+  	<run>
+  	<!--
+  		<include name="smoke"></include>
+  		<include name="sanity"></include>
+  	-->
+  		<include name="s.*"></include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="openTapsGroups.CreateContact"/>
+      <class name="openTapsGroups.EditContact"/>
+      <class name="openTapsGroups.MergeContact"/>
+      <class name="openTapsGroups.DeleteContact"/>
+      <!-- <class name="openTapsGroups.Deletelead"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ContactSuite -->
